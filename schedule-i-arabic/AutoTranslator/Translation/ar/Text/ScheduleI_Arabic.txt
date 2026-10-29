@@ -3855,6 +3855,7 @@ The {GroupName} has arrived.=وصل {GroupName}.
 The {GroupName} have arrived.=وصل {GroupName}.
 The {GroupName} is coming to town...={GroupName} قادمون إلى المدينة...
 Theft=سرقة
+Their favorite effects:=تأثيراتهم المفضلة:
 Their favourite drugs:=مخدراتهم المفضلة:
 Them=هم
 Theoretically, if someone needed explosives, could you help with that?=نظرياً، إن احتاج شخص ما إلى متفجرات، هل يمكنك المساعدة في ذلك؟

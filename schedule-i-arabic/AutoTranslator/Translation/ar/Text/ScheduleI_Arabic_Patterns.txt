@@ -201,3 +201,6 @@ r:"^Can't sleep before (\d{1,2}):(\d{2}) AM$"=لا يمكنك النوم قبل 
 r:"^Suggested: \$(\d[\d,.]*K?)$"=المقترح: $$${1}
 r:"^(\d+) hrs$"=${1} ساعات
 r:"^1 hr$"=ساعة واحدة
+sr:"^(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday), Day (\d+)$"=${1}، اليوم ${2}
+sr:"^(\d{1,2}):(\d{2}) ?AM (Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)$"=${1}:${2} ص ${3}
+sr:"^(\d{1,2}):(\d{2}) ?PM (Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)$"=${1}:${2} م ${3}
