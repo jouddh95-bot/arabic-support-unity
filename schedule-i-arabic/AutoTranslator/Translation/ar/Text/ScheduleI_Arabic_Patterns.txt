@@ -9,8 +9,6 @@ r:"^Alright,\ I'll\ be\ a\ dealer\ for\ you\ but\ there\ is\ a\ (.+?)\ signing\ 
 r:"^At\ a\ (<[^>]*>)mixing\ station(</[^>]*>),\ you\ mix\ products\ with\ special\ (<[^>]*>)ingredients(</[^>]*>)\ to\ create\ new\ mixes\ with\ (<[^>]*>)unique\ effects(</[^>]*>)\.\ Customers\ will\ pay\ more\ for\ these\ products\.$"=في ${1}محطة الخلط${2}، تخلط المنتجات مع ${3}مكونات${4} خاصة لصنع خلطات جديدة ذات ${5}تأثيرات فريدة${6}. سيدفع الزبائن أكثر مقابل هذه المنتجات.
 sr:"^Ay\ bro\ you\ got\ (.+?)\?\ I'll\ pay\ (.+?)\ for\ it$"=يا أخي عندك ${1}؟ سأدفع ${2} مقابله
 sr:"^Ayo\ dawg,\ if\ you\ got\ (.+?)\ I'll\ pay\ (.+?)\ for\ it\.\ Deal\?$"=يا صاحبي، إن كان عندك ${1} سأدفع ${2} مقابله. اتفقنا؟
-r:"^Backups\ are\ stored\ in\ this\ folder:\
-%USERPROFILE%\\AppData\\LocalLow\\TVGS\\Schedule\ I\\Saves\\(.+?)\\Backups$"=تُحفظ النسخ الاحتياطية في هذا المجلد:\n%USERPROFILE%\\AppData\\LocalLow\\TVGS\\Schedule I\\Saves\\${1}\\Backups
 r:"^Best\ I\ can\ do\ is\ (.+?)$"=أقصى ما أستطيع هو ${1}
 sr:"^Cheers\ bro,\ I'll\ meet\ you\ (.+?)\ between\ (.+?)\ and\ (.+?)\.$"=شكراً يا أخي، سألقاك ${1} بين ${2} و${3}.
 sr:"^Cheers\ dog\.\ My\ friend\ (.+?)\ might\ like\ your\ stuff\.\ Go\ check\ them\ out$"=شكراً يا صاح. صديقي ${1} قد تعجبه بضاعتك. اذهب وتعرّف عليه
@@ -168,3 +166,16 @@ r:"^You've\ finished\ a\ few\ deals\ and\ made\ some\ decent\ cash,\ but\ if\ yo
 r:"^Your\ (<[^>]*>)online\ balance(</[^>]*>)\ is\ displayed\ in\ the\ top\ right\ corner\.$"=يظهر ${1}رصيدك الإلكتروني${2} في الزاوية العلوية اليمنى.
 r:"^Your\ best\ bet\ for\ getting\ the\ tools\ you\ need\ is\ the\ (<[^>]*>)warehouse\.(</[^>]*>)\ It's\ the\ local\ spot\ where\ you\ can\ do\ business\ with\.\.\.\ like\-minded\ individuals\.\ Weapons,\ specialized\ equipment,\ workers\ for\ hire\ \-\ all\ the\ good\ stuff\.$"=أفضل خيار لك للحصول على الأدوات التي تحتاجها هو ${1}المستودع.${2} إنه المكان المحلي الذي يمكنك فيه التعامل مع... أشخاص يفكرون مثلك. أسلحة، معدات متخصصة، عمال للتوظيف - كل الأشياء الجيدة.
 sr:"^Your\ drop\ is\ ready\.\ Grab\ it\ (.+?)$"=طردك جاهز. خذه ${1}
+r:"^(\d{1,2}):(\d{2}) AM (Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)$"=${1}:${2} ص ${3}
+r:"^(\d{1,2}):(\d{2}) PM (Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)$"=${1}:${2} م ${3}
+r:"^(\d{1,2}):(\d{2}) AM$"=${1}:${2} ص
+r:"^(\d{1,2}):(\d{2}) PM$"=${1}:${2} م
+r:"^(\d{1,2}) ?AM$"=${1} ص
+r:"^(\d{1,2}) ?PM$"=${1} م
+sr:"^(\d+)x (.+)$"=${1}x ${2}
+sr:"^How about (\d+)x (.+) for \$(\d[\d,]*)\?$"=ما رأيك بـ ${1}x ${2} مقابل $${3}؟
+r:"^I've received \$(\d[\d,]*) cash from you\. Your debt is now paid off\.$"=استلمت منك $${1} نقداً. تم سداد دينك بالكامل.
+r:"^I've received \$(\d[\d,]*) cash from you\. Your debt is now \$(\d[\d,]*)\.$"=استلمت منك $${1} نقداً. أصبح دينك الآن $${2}.
+sr:"^I need a dead drop:\n([\s\S]+)$"=أحتاج طرداً مخبأ:\n${1}
+sr:"^(.+)<color=#A0A0A0FF> \((.+)\)</color>$"=${1}<color=#A0A0A0FF> (${2})</color>
+sr:"^<b>(.+)</b>$"=<b>${1}</b>
