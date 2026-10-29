@@ -29,11 +29,10 @@
 بعد النسخ يجب أن يحتوي مجلد اللعبة على:
     version.dll
     MelonLoader\
-    Mods\
-    UserLibs\
+    Mods\            (وفيه الملف ArabicSupport.dll)
     UserData\
     Plugins\
-    AutoTranslator\
+    AutoTranslator\  (وفيه ملفات الترجمة العربية)
     Schedule I.exe        (موجود من قبل)
     Schedule I_Data\      (موجود من قبل)
 
@@ -52,5 +51,5 @@
 
 طريقة إزالة التعريب
 --------------------
-احذف من مجلد اللعبة:  version.dll  والمجلدات  MelonLoader  و  Mods  و  UserLibs  و  AutoTranslator
+احذف من مجلد اللعبة:  version.dll  والمجلدات  MelonLoader  و  Mods  و  UserData  و  Plugins  و  AutoTranslator
 أو من Steam: اضغط بالزر الأيمن على اللعبة ← الخصائص ← الملفات المثبتة ← التحقق من سلامة ملفات اللعبة.
