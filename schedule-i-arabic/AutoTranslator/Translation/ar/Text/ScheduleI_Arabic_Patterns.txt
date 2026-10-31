@@ -273,3 +273,5 @@ sr:"^Hmm\.\.\. Oscar seen one lying around somewhere in (<color\x3D#[0-9A-Fa-f]{
 sr:"^Oh! And I remember hearing (<color\x3D#[0-9A-Fa-f]{6,8}>)(.+)(</color>) has one! Sorry, Oscar isn't very good with names\. Hope this helps\.$"=آه! وأذكر إني سمعت إن ${1}${2}${3} عنده واحد! السموحة، أوسكار ما يحفظ الأسامي زين. إن شاء الله تفيدك.
 sr:"^'(.+)' REGION MUST BE UNLOCKED$"=لازم تفتح منطقة '${1}'
 r:"^(\d+) FPS$"=${1} FPS
+sr:"^(<color\x3D[^>]+>)(\d+)x(</color>) (.+)$"=${1}${2}x${3} ${4}
+sr:"^(\d+)x (.+)$"=${1}x ${2}
