@@ -1,4 +1,17 @@
 // Patterns for text that the game fills in at runtime
+// Priority patterns (checked before the generated ones)
+sr:"^Deal for (.+?)(<color\x3D[^>]+>) \(Begins in (\d+) hrs\)(</color>)$"=صفقة مع ${1}${2} (تبدأ بعد ${3} ساعة)${4}
+sr:"^Deal for (.+?)(<color\x3D[^>]+>) \(Begins in (\d+) min\)(</color>)$"=صفقة مع ${1}${2} (تبدأ بعد ${3} دقيقة)${4}
+sr:"^Deal for (.+?)(<color\x3D[^>]+>) \(Expires in (\d+) hrs\)(</color>)$"=صفقة مع ${1}${2} (تنتهي بعد ${3} ساعة)${4}
+sr:"^Deal for (.+?)(<color\x3D[^>]+>) \(Expires in (\d+) min\)(</color>)$"=صفقة مع ${1}${2} (تنتهي بعد ${3} دقيقة)${4}
+sr:"^Deal for (.+?) \(Begins in (\d+) hrs\)$"=صفقة مع ${1} (تبدأ بعد ${2} ساعة)
+sr:"^Deal for (.+?) \(Expires in (\d+) hrs\)$"=صفقة مع ${1} (تنتهي بعد ${2} ساعة)
+sr:"^Deal for (.+)$"=صفقة مع ${1}
+sr:"^Deliver (\d+)x (.+) to (.+)$"=وصّل ${1}x ${2} إلى ${3}
+sr:"^(\d+)x (.+?), (.+)$"=${1}x ${2}، ${3}
+r:"^\((\d+) days?, (\d+) hours? remaining\)$"=(باقي ${1} يوم و${2} ساعة)
+r:"^\((\d+) days? remaining\)$"=(باقي ${1} يوم)
+r:"^\((\d+) hours? remaining\)$"=(باقي ${1} ساعة)
 r:"^10K\ in\ earnings\ \-\ not\ bad\ at\ all!\ Soon\ you'll\ have\ the\ capital\ needed\ to\ start\ manufacturing\ (<[^>]*>)meth(</[^>]*>)\.\ But\ first,\ you're\ gonna\ need\ to\ purchase\ some\ equipment\.$"=10 آلاف أرباح - مو بطّالة أبد! قريب بيصير عندك راس المال اللي تحتاجه عشان تبدأ تصنّع ${1}الشبو${2}. بس أول شي، لازم تشتري شوية معدات.
 r:"^(.+?)\ will\ draw\ their\ daily\ wage\ from\ this\ briefcase\.$"=${1} بياخذ راتبه اليومي من هالشنطة.
 r:"^A\ bomb\ of\ that\ size\ won't\ be\ easy\ to\ come\ by\ \-\ go\ ask\ around\ (<[^>]*>)Koyama\ Chemical\ Company(</[^>]*>)\ and\ see\ if\ someone\ can\ sneak\ you\ some\ raw\ explosives\.\ After\ that,\ (<[^>]*>)Stan(</[^>]*>),\ the\ weapons\ dealer,\ should\ be\ able\ to\ wire\ it\ up\ to\ a\ usable\ bomb\ for\ you\.$"=قنبلة بهالحجم مو سهل تلقاها - روح اسأل في ${1}شركة كوياما للكيماويات${2} وشوف إذا أحد يقدر يهرّب لك شوية متفجرات خام. بعدها، ${3}ستان${4} تاجر السلاح يقدر يركّبها لك قنبلة جاهزة.
